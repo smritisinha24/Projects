@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: sticky;
+    top:0;
+    background: white;
+    font-size:14px;
+    font-weight: bolder;
+    box-shadow: rgba(174, 174, 177, 0.2) 0px 7px 29px 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.search{
+    height: 5vh;
+    width: 25vw;
+    margin: 15px;
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.left img{
+    padding: 3vh 0vh;
+    width: 60px;
+    height: 39px;
+}
+.container{
+    max-width: 100vw;
+    /* margin: auto; */
+    /* padding: 0 50px; */
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 0 1.5vw;
+    font-weight: bolder;
+}
+.section1{
+    background-color: rgb(244, 244, 244);
+}
+.homeimg{
+    margin: 0 8vw;
+    width: 84vw;
+}
+.home2img{
+    width: 100vw;
+}
+.itemimg{
+    margin:1vh auto;
+    width: 10vw;
+    flex-wrap: wrap;
+}
+.cards img:hover{
+    width: 11vw;
+    cursor: pointer;
+}
+
+footer{
+        text-align: center;
+        margin: 12px 0;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (max-width: 1033px){
+    .left{
+        flex-direction: column;
+        align-items: center;
+        margin:3px auto;
+    }
+    .search{
+        height: 20px;
+        margin: 0 0 1.5vh 0;
+    }
+    .right{
+        font-size: 1.5vh;
+    }
+    ul{
+        height:5vh;
+        margin: 0.5vh 0;
+    }
+    ul li{
+        font-size: 1.5vh;
+    }
+}
