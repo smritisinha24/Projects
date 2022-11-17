@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="js" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    <link rel="shortcut icon" href="image/vector/default-monochrome-white.svg" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="loading">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    <div class="name"><h1>Smriti</h1></div>
+    <header>
+        <nav>
+            <ul>
+                <img src="image/vector/default-monochrome-white.svg" alt="" class="icon">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="hire.html">HIRE ME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <!-- <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li> -->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="right">
+            <!-- ------------------------------------ -->
+            <div class="wrapper">
+                <div class="centeredBox">
+                    <div ><h2 class="hey">Hi, </h2></div>
+                    <span id="typewriter" data-array=" "></span>
+                    <!-- <span class="cursor"></span> -->
+            </div>
+            </div>
+            <!-- ------------------------------------ -->
+            <!-- <div>
+                <h3>SMRITI SINHA</h3>
+                <h1>HEY! I AM
+                    <span class="multiText">
+                    </span>
+                    </div> -->
+                </h1><br>
+                    <p>I am a web developer, who loves design and internet sphere. I am an enthusiastic learner and as a student currently
+                        working and discovering different fields of tech.</p>
+                    </div>
+                    <div class="left">
+                        <img src="https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_640.png" alt="MYpic">
+                    </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.linkedin.com/in/smriti-sinha-741aa1216/ ">Copyright 2022 © Smriti Sinha |  All rights reserved</a>
+    </footer>
+    <script>
+        var typeWriterElement = document.getElementById('typewriter');
+
+var textArray = ["I am Smriti Sinha"," I am a developer"," I am a student", " I am a frontend developer", "  I am an enthusiastis learner"];
+function delWriter(text, i, cb) {
+	if (i >= 0 ) {
+		typeWriterElement.innerHTML = text.substring(0, i--);
+		// generate a random Number to emulate backspace hitting.
+ 		var rndBack = 20 + Math.random() * 100;
+		setTimeout(function() {
+			delWriter(text, i, cb);
+		},rndBack); 
+	} else if (typeof cb == 'function') {
+		setTimeout(cb,150);
+	}
+};
+function typeWriter(text, i, cb) {
+	if ( i < text.length+1 ) {
+		typeWriterElement.innerHTML = text.substring(0, i++);
+		var rndTyping = 200 - Math.random() * 100;
+		setTimeout( function () { 
+			typeWriter(text, i++, cb)
+		},rndTyping);
+	} else if (i === text.length+1) {
+		setTimeout( function () {
+			delWriter(text, i, cb)
+		},100);
+	}
+};
+function StartWriter(i) {
+	if (typeof textArray[i] == "undefined") {
+		setTimeout( function () {
+			StartWriter(0)
+		},50);
+	} else if(i < textArray[i].length+1) {
+		typeWriter(textArray[i], 0, function () {
+			StartWriter(i+1);
+		});
+	}  
+};
+setTimeout( function () {
+	StartWriter(0);
+},100);
+	
+    </script>
+</body>
+</html>

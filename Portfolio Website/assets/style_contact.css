@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* width: 100%; */
+}
+.name{
+    background-image: url(https://i.pinimg.com/564x/9a/e3/2e/9ae32e81f8bebdd8b77aedfefa99c196.jpg);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Allura', cursive;
+    font-size: 70px;
+
+}
+nav{
+    /* background-color:#6d6052; */
+    background-color: #746b5f;
+    /* background-color:#d8d8d7; */
+    height: 15vh;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-top: 5vh;
+    padding:0 4vw;
+}
+nav ul li a{
+    font-size: 20px;
+    /* color: #c7c0b8; */
+    /* color: #4f4438; */
+    color: #fff8f1;
+}
+nav ul li a:hover{
+    font-size: bold;
+    color: #aaa69e;
+}
+
+header nav ul img{
+    margin: 1vh 15vw 2vh 2vw;
+    /* width: 8vw; */
+    height: 12vh;
+}
+.connect{
+    padding: 5vh;
+    background-color: #fff0e2;
+    /* background-color:transparent; */
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /* padding-bottom: 12vh; */
+}
+.connect h2{
+    padding-bottom: 2vh;
+}
+.connect p{
+    padding-bottom: 2vh;
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+}
+.insta{
+    width: 8vw;
+    padding-left: 15vh;
+}
+.insta:hover{
+    width: 9vw;
+    cursor: pointer;
+}
+/* ---------------------------------------------- */
+.form-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea { 
+    outline: none;
+    }
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    /* background: #fff0e2; */
+    background: #746b5f;
+    padding-bottom: 8vh;
+}
+.head{
+    padding: 2vh;
+    font-size: 8vh;
+    font-weight: 500;
+}
+form {
+    margin-top: 3vh;
+    position: relative;
+    width: 60%;
+    border-radius: 30px;
+    /* background: rgb(164, 153, 153); */
+    background:#fff ;
+}
+.form-inner {
+    padding: 40px;
+}
+.form-inner input,
+.form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #D0DFE8;
+    /* background: #ffffff; */
+    font-family: 'Poppins', sans-serif;
+}
+.form-inner textarea {
+resize: none;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid #3e4f24;
+    background: #746b5f; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+button:hover {
+    background: #43403c;
+    }
+@media (min-width: 568px) {
+    form {
+    width: 50%;
+    }
+}
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #746b5f;
+    color: white;
+    padding: 2vh;
+    font-family: 'Poppins', sans-serif;
+  }
+footer a{
+    color: white;
+}
+/* --------------------------------------------- */
+@media screen and (max-width: 1018px) {
+    nav{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 23vh;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        justify-content: center;
+        margin: 0vh;
+        padding: 0;
+    }
+    nav ul li{
+        /* ------------------------------ */
+        margin-top: 6vh;
+        /* ------------------------------ */
+        /* margin: 0vh;
+        padding: 0;
+        padding-left: 3vh;
+        height: 0; */
+        /* ------------------------------ */
+         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
+    nav ul li a{
+        /* color: red; */
+        margin: 0;
+        padding: 0;
+    } 
+    .icon{
+        padding-top: vh;
+         margin: 0;
+        padding: 0;
+        width: 8vh;
+        padding-right: 1vh; 
+        padding-left: 1vh; 
+     }
+      li{
+        margin: 0;
+        padding: 0;
+     }
+     .insta{
+        margin: 0;
+        padding: 2vh;
+     }
+     p{
+        text-align: center;
+     }
+     .head{
+        font-size: 5vh;
+        text-align: center;
+     }
+     form{
+        width: 90%;        
+     }
+     }
+    

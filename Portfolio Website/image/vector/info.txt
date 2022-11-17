@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Sail-Regular
+font link: https://fonts.google.com/specimen/Sail
+font author: Miguel Hernandez
+font author site: http://www.alphabets.cl/
+
+
+icon designer: Iris Li
+icon designer link: /icons.design
+        
+{"bg":"transparent","icon-gradient-0":"#87544E","icon-gradient-1":"#87544E","font":"#000000","slogan":"#141414"}
+      
